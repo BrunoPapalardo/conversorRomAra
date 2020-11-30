@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor Decimais e Romanos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 id="titulo">
+        Conversor de números inteiros para romanos
+    </h1>
+
+    <div>
+        <div id="in-out">
+            <fieldset>
+                <legend id="lgd1">Numeração árabe:</legend>
+                <input id="campo1" type="text" oninput="this.value = this.value.toUpperCase()" pattern="^[0-9]+$">
+            </fieldset>
+
+            <div id="btnTrocar">
+                <button onclick="trocar()">
+                    <img src="https://static.thenounproject.com/png/540218-200.png">
+                    inverter
+                </button>
+            </div>
+
+            <fieldset>
+                <legend id="lgd2">Numeração romana:</legend>
+                <input id="campo2" type="text" disabled>
+            </fieldset>
+        </div>
+    </div>
+
+    <div id="btnConverter">
+        <button onclick="converter()">Converter</button>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>

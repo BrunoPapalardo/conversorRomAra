@@ -1,0 +1,113 @@
+:root {
+    --cor-titulo: rgb(87, 60, 153);
+    --cor-texto: #6842C2;
+    --cor-detalhe: #04D361;
+    --cor-background: #F0F0F7;;
+}
+
+body {
+    background-color: #F0F0F7;
+}
+
+#titulo {
+    width: 100%;
+    height: 60px;
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+    color: var(--cor-titulo);
+}
+
+#in-out {
+    margin-top: 10%;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    align-content: center;
+}
+
+#in-out fieldset {
+    border: 0;
+    width: auto;
+    height: 100px;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-content: center;
+}
+
+legend {
+    font: 700 30px Archivo;
+    text-align: center;
+    color: var(--cor-texto);
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    display: flex;
+    text-align: center;
+    transition: 0.2s;
+}
+
+input:disabled {
+    background-color: white;
+    color: var(--cor-detalhe);
+}
+
+input:hover {
+    margin-top: -5px;
+    height: 60px;
+}
+
+#btnTrocar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnTrocar button {
+    outline: none;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    transition: 0.5s;
+}
+
+#btnTrocar button:hover {
+    width: 160px;
+}
+
+#btnTrocar img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#btnConverter {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnConverter button {
+    outline: none;
+    color: white;
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: var(--cor-detalhe);
+    border-radius: 10px 10px 10px 10px;
+    transition: 0.3s;
+}
+
+#btnConverter button:hover {
+    background-color: #04BF58;
+    height: 50px;
+    margin-top: -5px;
+}
